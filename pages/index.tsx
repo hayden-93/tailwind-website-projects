@@ -1,19 +1,21 @@
 import React from 'react';
 
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div>
-      <h1>Projects Page</h1>
       <div className='grid grid-cols-3'>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
+        <Link href='/email-subscribe-card'>
+          <Image
+            src='/images/email-subscribe-card/emailsubscribe.png'
+            alt='Email Card Image'
+            width={300}
+            height={300}
+            className='rounded'
+          />
+        </Link>
       </div>
     </div>
   );
