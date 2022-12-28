@@ -5,9 +5,6 @@ import React from 'react';
 const ImageGallery = () => {
   return (
     <div className='h-screen bg-cyan-50'>
-      <div>
-        <Link href='/'>Back to Projects</Link>
-      </div>
       <div className='max-w-screen-lg mx-auto bg-white py-20 rounded-xl'>
         <header className='p-8'>
           <nav>
