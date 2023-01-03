@@ -4,8 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 
-import { ArrowRight, X } from 'react-feather';
-
 const LoginModal = () => {
   return (
     <div className='h-full bg-rose-50'>
@@ -15,9 +13,6 @@ const LoginModal = () => {
           rel='stylesheet'
         />
       </Head>
-      <div>
-        <Link href='/'>Back to projects</Link>
-      </div>
       <div className='max-w-screen-md mx-auto flex bg-white mt-10 rounded-2xl shadow-2xl'>
         <div className='py-14 px-16 space-y-6'>
           <div className='space-y-4'>

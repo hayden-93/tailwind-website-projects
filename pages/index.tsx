@@ -25,6 +25,15 @@ export default function Home() {
             className='rounded'
           />
         </Link>
+        <Link href='/login-modal'>
+          <Image
+            src='/images/login-modal/login-modal.png'
+            alt='Image Gallery'
+            width={300}
+            height={300}
+            className='rounded'
+          />
+        </Link>
       </div>
     </div>
   );
