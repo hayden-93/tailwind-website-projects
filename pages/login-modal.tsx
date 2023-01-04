@@ -6,14 +6,14 @@ import Head from 'next/head';
 
 const LoginModal = () => {
   return (
-    <div className='h-full bg-rose-50'>
+    <div className='h-full py-10 bg-rose-50'>
       <Head>
         <Link
           href='https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap'
           rel='stylesheet'
         />
       </Head>
-      <div className='max-w-screen-md mx-auto flex bg-white mt-10 rounded-2xl shadow-2xl'>
+      <div className='max-w-screen-md mx-auto flex bg-white rounded-2xl shadow-2xl'>
         <div className='py-14 px-16 space-y-6'>
           <div className='space-y-4'>
             <h2 className='font-display text-2xl font-semibold'>Log In</h2>
@@ -84,7 +84,7 @@ const LoginModal = () => {
             height={300}
             className='h-full rounded-r-lg'
           />
-          <div className='group absolute right-72 top-20 flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full md:bg-white hover:cursor-pointer hover:-translate-y-0.5 transition duration-150'>
+          <div className='group absolute right-72 top-28 flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full md:bg-white hover:cursor-pointer hover:-translate-y-0.5 transition duration-150'>
             <svg
               className='w-6 h-6 text-black group-hover:text-gray-600'
               viewBox='0 0 24 24'
