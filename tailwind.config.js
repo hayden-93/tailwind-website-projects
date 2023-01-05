@@ -8,16 +8,14 @@ module.exports = {
         xs: '12px',
       },
     },
-      fontFamily: {
-        display: ['Mulish'],
-        body: ['Rokkitt'],
-      },
+    fontFamily: {
+      display: ['Mulish'],
+      body: ['Rokkitt'],
     },
     screens: {
       sm: '375px',
       md: '768px',
     },
-    extend: {},
   },
-  plugins: [],
+  extend: {},
 };
