@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className='max-w-screen-md mx-auto mt-10'>
-      <div className='grid grid-cols-3 gap-2'>
+      <div className='grid grid-cols-3 gap-6'>
         <Link href='/email-subscribe-card'>
           <Image
             src='/images/email-subscribe-card/emailsubscribe.png'
@@ -29,6 +29,15 @@ export default function Home() {
           <Image
             src='/images/login-modal/login-modal.png'
             alt='Image Gallery'
+            width={300}
+            height={300}
+            className='rounded'
+          />
+        </Link>
+        <Link href='/pricing-grid'>
+          <Image
+            src='/images/pricing-grid/pricing-grid.png'
+            alt='Pricing Grid'
             width={300}
             height={300}
             className='rounded'
