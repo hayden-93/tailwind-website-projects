@@ -43,6 +43,15 @@ export default function Home() {
             className='rounded'
           />
         </Link>
+        <Link href='/product-modal'>
+          <Image
+            src='/images/product-modal/product-modal.png'
+            alt='Product Modal'
+            width={300}
+            height={300}
+            className='rounded'
+          />
+        </Link>
       </div>
     </div>
   );
