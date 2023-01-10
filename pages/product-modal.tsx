@@ -27,7 +27,7 @@ const ProductModal = () => {
           <div className='space-y-2'>
             <span className='block text-xs line-through'>$799</span>
             <span className='block text-4xl font-bold'>$599</span>
-            <p className='text-xxs font-light'>
+            <p className='text-xxs font-light text-gray-500'>
               This offer is valid until April 3rd or as long as stock lasts!
             </p>
           </div>
@@ -43,7 +43,7 @@ const ProductModal = () => {
             <span className='text-xs'>50+ pcs. in stock</span>
           </div>
           <div className='flex space-x-2 items-baseline'>
-            <button className='flex justify-center items-center py-1 px-3 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
+            <button className='flex justify-center items-center p-3 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
               <Image
                 src='/images/product-modal/weight.png'
                 alt='Scales image'
@@ -53,7 +53,7 @@ const ProductModal = () => {
               <span className='text-xs'>Add to cart</span>
             </button>
             <div>
-              <button className='flex justify-center items-center py-1 px-3 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
+              <button className='flex justify-center items-center p-3 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
                 <Image
                   src='/images/product-modal/heart.png'
                   alt='Heart image'
