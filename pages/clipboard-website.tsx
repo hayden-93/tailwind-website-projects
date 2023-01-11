@@ -14,6 +14,17 @@ const ClipboardWebsite = () => {
         />
       </Head>
       <div>
+        <span className='flex justify-center items-center'>
+          <svg width='125' height='125' className='w-40 h-40'>
+            <g stroke='#26BBA4' strokeWidth='10' fill='none' fillRule='evenodd'>
+              <circle cx='62.5' cy='62.5' r='57.5' />
+              <path
+                d='M85.481 85.481c-12.692 12.692-33.27 12.692-45.962 0s-12.692-33.27 0-45.962 33.27-12.692 45.962 0'
+                strokeLinecap='round'
+              />
+            </g>
+          </svg>
+        </span>
         <h1>A history of everything you copy</h1>
         <p>
           Clipboard allows you to track and organize everything you copy.
