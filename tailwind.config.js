@@ -8,11 +8,17 @@ module.exports = {
         desktop: '1440px',
       },
       colors: {
-        primary: {},
-        neutral: {},
+        primary: {
+          'clipboard-cyan': 'hsl(171, 66%, 44%)',
+          'clipboard-light-blue': 'hsl(233, 100%, 69%)',
+        },
+        neutral: {
+          'clipboard-dark-blue': 'hsl(210, 10%, 33%)',
+          'clipboard-blue': 'hsl(201, 11%, 66%)',
+        },
       },
       fontFamily: {
-        body: ['Bai Jamjuree'],
+        'Bai-Jamjuree': "'Bai Jamjuree'",
       },
     },
   },

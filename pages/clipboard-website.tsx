@@ -2,20 +2,30 @@ import React from 'react';
 
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const ClipboardWebsite = () => {
   return (
-    <div>
+    <div className='font-Bai-Jamjuree'>
       <Head>
-        <Link
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
+        <link
           href='https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'
           rel='stylesheet'
         />
       </Head>
       <div>
-        <span className='flex justify-center items-center'>
-          <svg width='125' height='125' className='w-40 h-40'>
+        <div className='flex justify-center items-center'>
+          <div className='absolute'>
+            <Image
+              src='/images/clipboard-website/bg-header-desktop.png'
+              alt='Header background image'
+              width={1440}
+              height={810}
+              className='relative'
+            />
+          </div>
+          <svg width='125' height='125' className='mt-24'>
             <g stroke='#26BBA4' strokeWidth='10' fill='none' fillRule='evenodd'>
               <circle cx='62.5' cy='62.5' r='57.5' />
               <path
@@ -24,19 +34,27 @@ const ClipboardWebsite = () => {
               />
             </g>
           </svg>
-        </span>
-        <h1>A history of everything you copy</h1>
-        <p>
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
-        <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
         </div>
-        <div>
+        <div className='max-w-screen-sm mx-auto mt-16 space-y-4'>
+          <h1 className='text-neutral-clipboard-dark-blue text-3xl font-medium text-center'>
+            A history of everything you copy
+          </h1>
+          <p className='max-w-lg mx-auto text-neutral-clipboard-blue text-sm text-center'>
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+          <div className='flex justify-center items-center space-x-2 py-6'>
+            <button className='py-2 px-6 bg-primary-clipboard-cyan text-white text-xs rounded-full shadow-sm shadow-primary-clipboard-cyan'>
+              Download for iOS
+            </button>
+            <button className='py-2 px-6 bg-primary-clipboard-light-blue text-white text-xs rounded-full shadow-sm shadow-primary-clipboard-light-blue'>
+              Download for Mac
+            </button>
+          </div>
+        </div>
+        <div className='text-center'>
           <h2>Keep track of your snippets</h2>
-          <p>
+          <p className=''>
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
