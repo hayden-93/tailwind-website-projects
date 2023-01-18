@@ -2,6 +2,7 @@ import React from "react";
 
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const ClipboardWebsite = () => {
   return (
@@ -118,8 +119,8 @@ const ClipboardWebsite = () => {
             />
           </div>
         </section>
-        <section className="max-w-screen-md mx-auto text-center space-y-4">
-          <div className="py-20">
+        <section className="max-w-screen-lg mx-auto text-center">
+          <div className="space-y-4">
             <h2 className="text-3xl font-semibold text-neutral-clipboard-dark-blue">
               Supercharge your workflow
             </h2>
@@ -127,8 +128,8 @@ const ClipboardWebsite = () => {
               Weve got the tools to boost your productivity.
             </p>
           </div>
-          <div className="flex py-20 space-x-20">
-            <div className="w-2/5 space-y-4">
+          <div className="flex py-20 justify-center items-center space-x-20">
+            <div className="space-y-4">
               <Image
                 src="/icons/clipboard-website/icon-blacklist.svg"
                 alt=""
@@ -144,7 +145,7 @@ const ClipboardWebsite = () => {
                 clipboard by excluding certain sources.
               </p>
             </div>
-            <div className="w-2/5 space-y-4">
+            <div className="space-y-4">
               <Image
                 src="/icons/clipboard-website/icon-text.svg"
                 alt=""
@@ -160,13 +161,13 @@ const ClipboardWebsite = () => {
                 look.
               </p>
             </div>
-            <div className="w-2/5 space-y-4">
+            <div className="space-y-4">
               <Image
                 src="/icons/clipboard-website/icon-preview.svg"
                 alt=""
                 width={40}
                 height={40}
-                className="mx-auto"
+                className="mx-auto pt-3"
               />
               <span className="block text-xl font-semibold text-neutral-clipboard-dark-blue">
                 Sneak preview
@@ -177,7 +178,7 @@ const ClipboardWebsite = () => {
             </div>
           </div>
         </section>
-        <section className="flex max-w-screen-lg mx-auto justify-around">
+        <section className="flex max-w-screen-lg mx-auto mt-20 justify-around">
           <div>
             <Image
               src="/images/clipboard-website/logo-google.png"
@@ -245,13 +246,23 @@ const ClipboardWebsite = () => {
               height={60}
               className="p-8"
             />
-            <div className="">
-              <ul className="">
-                <li>FAQs</li>
-                <li>Contact Us</li>
-                <li>Privacy Policy</li>
-                <li>Press Kit</li>
-                <li>Install Guide</li>
+            <div className="pr-64 self-center text-neutral-clipboard-dark-blue">
+              <ul className="grid grid-cols-3 gap-6">
+                <li>
+                  <Link href="/">FAQs</Link>
+                </li>
+                <li>
+                  <Link href="/">Contact Us</Link>
+                </li>
+                <li>
+                  <Link href="/">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link href="/">Press Kit</Link>
+                </li>
+                <li>
+                  <Link href="/">Install Guide</Link>
+                </li>
               </ul>
             </div>
             <div className="flex justify-between self-center space-x-6">
