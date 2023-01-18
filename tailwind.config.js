@@ -2,7 +2,25 @@
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        mobile: '375px',
+        desktop: '1440px',
+      },
+      colors: {
+        primary: {
+          'clipboard-cyan': 'hsl(171, 66%, 44%)',
+          'clipboard-light-blue': 'hsl(233, 100%, 69%)',
+        },
+        neutral: {
+          'clipboard-dark-blue': 'hsl(210, 10%, 33%)',
+          'clipboard-blue': 'hsl(201, 11%, 66%)',
+        },
+      },
+      fontFamily: {
+        'Bai-Jamjuree': "'Bai Jamjuree'",
+      },
+    },
   },
   plugins: [],
 };
