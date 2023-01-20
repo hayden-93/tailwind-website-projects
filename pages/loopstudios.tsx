@@ -241,8 +241,12 @@ const LoopStudios = () => {
               <h5>Make It Fisheye</h5>
             </div>
           </div>
+          <button className="w-full justify-center mt-10 py-2 px-10 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white md:hidden">
+            See All
+          </button>
         </div>
       </section>
+      <section id=""></section>
     </div>
   );
 };
