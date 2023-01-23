@@ -4,6 +4,18 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'loop-sm': '480px',
+        'loop-md': '768px',
+        'loop-lg': '976px',
+        'loop-xl': '1440px',
+      },
+      fontFamily: {
+        sans: ['Josefin Sans', 'sans-serif'],
+        alata: ['Alata'],
+        'Bai-Jamjuree': "'Bai Jamjuree'",
+      },
+      letterSpacing: {
+        widest: '0.3em',
         mobile: '375px',
         desktop: '1440px',
       },
@@ -16,9 +28,6 @@ module.exports = {
           'clipboard-dark-blue': 'hsl(210, 10%, 33%)',
           'clipboard-blue': 'hsl(201, 11%, 66%)',
         },
-      },
-      fontFamily: {
-        'Bai-Jamjuree': "'Bai Jamjuree'",
       },
     },
   },
