@@ -3,6 +3,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 const LoopStudios = () => {
   return (
@@ -56,8 +57,39 @@ const LoopStudios = () => {
               <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
             </div>
           </div>
-          {/*// TODO: Create hamburger button*/}
+          <div className="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              className="z-40 hamburger block md:hidden focus:outline-none"
+            >
+              <span className="hamburger-top"></span>
+              <span className="hamburger-middle"></span>
+              <span className="hamburger-bottom"></span>
+            </button>
+          </div>
         </nav>
+
+        <div
+          id="menu"
+          className="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <Link href="#" className="hover:text-pink-500">
+            About
+          </Link>
+          <Link href="#" className="hover:text-pink-500">
+            Careers
+          </Link>
+          <Link href="#" className="hover:text-pink-500">
+            Events
+          </Link>
+          <Link href="#" className="hover:text-pink-500">
+            Products
+          </Link>
+          <Link href="#" className="hover:text-pink-500">
+            Support
+          </Link>
+        </div>
         <p className="max-w-screen-sm my-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
           Impressive experiences that deliver
         </p>
@@ -71,7 +103,7 @@ const LoopStudios = () => {
             height={500}
           />
           <div className="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
-            <h2 className="max-w-screen-loop-lg mt-10 mb-6 font-sans text-4xl text-gray-900 uppercase text-center md:text-5xl md:mt-0 md:text-left">
+            <h2 className="max-w-screen-loop-lg mt-10 mb-6 pr-6 font-sans text-4xl text-gray-900 uppercase text-center md:text-5xl md:mt-0 md:text-left">
               The leader in interactive VR
             </h2>
             <p className="max-w-md text-center md:text-left">
@@ -85,7 +117,7 @@ const LoopStudios = () => {
       </section>
       <section id="creations">
         <div className="container max-w-screen-loop-xl mx-auto my-32 px-6 text-gray-900 md:px-0">
-          <div className="flex justify-center mb-20 md:justify-between">
+          <div className="flex justify-center mb-20 px-6 md:justify-between">
             <h2 className="text-4xl text-center uppercase md:text-left md:text-5xl">
               Our Creations
             </h2>
@@ -246,7 +278,94 @@ const LoopStudios = () => {
           </button>
         </div>
       </section>
-      <section id=""></section>
+      <footer className="bg-black container max-w-screen-loop-xl mx-auto py-10">
+        <div className="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+          <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+            <div className="h-8">
+              <Image
+                src="/images/loopstudios/logo.svg"
+                alt="Logo"
+                width={300}
+                height={300}
+                className="w-44 md:ml-3"
+              />
+            </div>
+            <div className="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+              <div className="group h-10">
+                <Link href="#">About</Link>
+                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <div className="group h-10">
+                <Link href="#">Careers</Link>
+                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <div className="group h-10">
+                <Link href="#">Events</Link>
+                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <div className="group h-10">
+                <Link href="#">Products</Link>
+                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <div className="group h-10">
+                <Link href="#">Support</Link>
+                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-start justify-between space-y-4 text-gray-500">
+            <div className="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0">
+              <div className="group h-8">
+                <Link href="#">
+                  <Image
+                    src="/icons/loopstudios/icon-facebook.svg"
+                    alt="Facebook icon"
+                    width={24}
+                    height={24}
+                    className="h-6"
+                  />
+                </Link>
+              </div>
+              <div className="group h-8">
+                <Link href="#">
+                  <Image
+                    src="/icons/loopstudios/icon-twitter.svg"
+                    alt="Twitter icon"
+                    width={24}
+                    height={24}
+                    className="h-6"
+                  />
+                </Link>
+              </div>
+              <div className="group h-8">
+                <Link href="#">
+                  <Image
+                    src="/icons/loopstudios/icon-pinterest.svg"
+                    alt="Pinterest icon"
+                    width={24}
+                    height={24}
+                    className="h-6"
+                  />
+                </Link>
+              </div>
+              <div className="group h-8">
+                <Link href="#">
+                  <Image
+                    src="/icons/loopstudios/icon-instagram.svg"
+                    alt="Instagram icon"
+                    width={24}
+                    height={24}
+                    className="h-6"
+                  />
+                </Link>
+              </div>
+            </div>
+            <p className="font-bold pr-6">
+              &copy; 2022 Loopstudios. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
