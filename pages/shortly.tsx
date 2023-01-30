@@ -163,6 +163,225 @@ const Shortly = () => {
             </div>
           </div>
         </section>
+        <section id="stats" className="py-24 bg-gray-100 text-center">
+          <div className="container mx-auto px-3">
+            <h2 className="text-4xl mb-6 font-bold">Advanced Statistics</h2>
+            <p className="max-w-xs mx-auto text-gray-400 md:max-w-md">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+        </section>
+        <section id="features" className="pb-32 bg-gray-100">
+          <div className="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
+            <div className="hidden absolute top-24 w-10/12 left-16 h-3 bg-shortly-cyan md:block"></div>
+            <div className="absolute w-2 left-1/2 h-full -ml-1 bg-shortly-cyan md:hidden"></div>
+            <div className="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+              <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-shortly-veryDarkViolet">
+                  <h5 className="text-xl font-bold text-center capitalize md:text-left">
+                    Brand Recognition
+                  </h5>
+                  <div>
+                    <Image
+                      src="/icons/shortly/icon-brand-recognition.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <p className="text-center text-gray-400 md:text-left">
+                Boost your brand recognition with each click. Generic links dont
+                mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div className="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3">
+              <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-shortly-veryDarkViolet">
+                  <Image
+                    src="/icons/shortly/icon-detailed-records.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
+                </div>
+              </div>
+              <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
+                Detailed records
+              </h5>
+              <p className="text-center text-gray-400 md:text-left">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div className="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-16 md:w-1/3">
+              <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
+                <div className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-shortly-veryDarkViolet">
+                  <Image
+                    src="/icons/shortly/icon-fully-customizable.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
+                </div>
+              </div>
+              <h5 className="pt-6 text-xl font-bold text-center capitalize md:text-left">
+                Fully customizable
+              </h5>
+              <p className="text-center text-gray-400 md:text-left">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* <section id="cta" className="py-24 bg-shortly-darkViolet">
+          <div className="flex flex-col p-2 space-y-6">
+            <h5 className="mx-auto space-y-10 text-4xl font-bold text-center text-white">
+              Boost your links today
+            </h5>
+            <button className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-shortly-cyan hover:bg-shortly-cyanLlight md:text-base md:py-3 focus:outline-none">
+              Get Started
+            </button>
+          </div>
+        </section> */}
+        {/* <footer className="py-16 bg-shortly-veryDarkViolet">
+          <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+            <Image
+              src="/images/shortly/logo.svg"
+              alt=""
+              width={121}
+              height={33}
+              className=""
+            />
+            <div className="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+              <div className="flex flex-col items-center w-full md:items-start">
+                <div className="mb-5 font-bold text-white capitalize">
+                  Features
+                </div>
+                <div className="flex flex-col items-center space-y-3 md:items-start">
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Link shortening
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-shortly-cyan"
+                  >
+                    Branded links
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-shortly-cyan"
+                  >
+                    Analytics
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-col items-center w-full md:items-start">
+                <div className="mb-5 font-bold text-white capitalize">
+                  Resources
+                </div>
+                <div className="flex flex-col items-center space-y-3 md:items-start">
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Blog
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Developers
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Support
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-col items-center w-full md:items-start">
+                <div className="mb-5 font-bold text-white capitalize">
+                  Company
+                </div>
+                <div className="flex flex-col items-center space-y-3 md:items-start">
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Our Team
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Careers
+                  </a>
+                  <a
+                    href="#"
+                    className="capitalize text-shortly-grayishViolet hover:text-cyan"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="flex space-x-6">
+              <a href="#">
+                <Image
+                  src="/icons/shortly/icon-facebook.svg"
+                  alt=""
+                  className="ficon"
+                  width={20}
+                  height={20}
+                />
+              </a>
+              <a href="#">
+                <Image
+                  src="/icons/shortly/icon-twitter.svg"
+                  alt=""
+                  className="ficon"
+                  width={20}
+                  height={20}
+                />
+              </a>
+              <a href="#">
+                <Image
+                  src="/icons/shortly/icon-pinterest.svg"
+                  alt=""
+                  className="ficon"
+                  width={20}
+                  height={20}
+                />
+              </a>
+              <a href="#">
+                <Image
+                  src="/icons/shortly/icon-instagram.svg"
+                  alt=""
+                  className="ficon"
+                  width={20}
+                  height={20}
+                />
+              </a>
+            </div>
+          </div>
+        </footer> */}
       </div>
     </>
   );
